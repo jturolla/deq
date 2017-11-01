@@ -3,8 +3,8 @@
 function deq() {
   if [[ -z "$1" ]]
   then
-    docker run -i jturolla/deq eq
+    docker run -i jturolla/deq:latest eq
   else
-    docker run -i jturolla/deq eq "$1"
+    docker run -i jturolla/deq:latest eq "$1"
   fi
 }
